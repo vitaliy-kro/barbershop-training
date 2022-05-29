@@ -4,23 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Barbershop</title>
   </head>
   <body>
+      <div class="mobile-header">
     <!-- Header -->
-    <header>
-      <a href="#">
-        <svg>
-          <use></use>
+    <header class="page-header">
+        <div class="container page-header__container">
+      <a class="logo" href="#">
+        <svg width="70" height="56" class="logo__icon">
+          <use href="./images/sprite.svg#icon-Logo"></use>
         </svg>
       </a>
-      <button>
-        <svg>
-          <use></use>
+      <button class="mobile-header__button">
+        <svg width="40" height="40" class="mobile-header__icon">
+          <use href="./images/sprite.svg#icon-menu"></use>
         </svg>
       </button>
+      </div>
+      <div class="mobile-header__menu">
       <nav>
-        <ul>
+        <ul >
           <li><a href="#">О нас</a></li>
           <li><a href="#"></a>Услуги и цены</li>
           <li><a href="#"></a>Мастера</li>
@@ -35,15 +47,21 @@
         <li>Instagram</li>
         <li>Youtube</li>
       </ul>
+      </div>
     </header>
+    <main>
     <!-- Hero -->
     <section>
+        <div class="container">
       <p lang="en">A hair salon for men in Kyiv</p>
       <h1>BarberShop</h1>
       <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+      </div>
     </section>
+    </div>
     <!-- About us -->
     <section>
+        <div class="container">
       <p>О НАС</p>
       <h2>Лучший Барбершоп твоего города</h2>
       <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
@@ -52,9 +70,11 @@
       всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто
       к нам приходит!
       <button>онлайн-запись</button>
+      </div>
     </section>
     <!-- Services and prices -->
-    <section>
+    <section class="services">
+        <div class="container">
       <p>Проведи время в компании лучших мастеров</p>
       <h2>Услуги и цены</h2>
       <ul>
@@ -102,81 +122,126 @@
       </p>
       <ul>
         <li>
-          <p>600</p>
+          <p>600 
+              <svg>
+                  <use href="./images/sprite.svg#icon-plus"></use>
+              </svg>
+          </p>
           <p>Довольных клиентов в день</p>
         </li>
         <li>
-          <p>50</p>
+          <p>50 <svg>
+                  <use href="./images/sprite.svg#icon-plus"></use>
+              </svg></p>
           <p>Наград за отличный сервис</p>
         </li>
         <li>
-          <p>20</p>
+          <p>20 <svg>
+                  <use href="./images/sprite.svg#icon-plus"></use>
+              </svg></p>
           <p>Лучших мастеров Киева</p>
         </li>
         <li>
-          <p>100</p>
+          <p>100 <svg>
+                  <use href="./images/sprite.svg#icon-plus"></use>
+              </svg></p>
           <p>Подарков постоянным клиентам</p>
         </li>
       </ul>
+      </div>
     </section>
     <!-- Masters -->
     <section>
+        <div class="container">
       <p>для настоящих ценителей атмосферы</p>
       <h2>Наши мастера</h2>
       <ul>
         <li>
-          <picture></picture>
+          <picture>
+              <img width="418" src="./images/master1-mobile.jpg" alt="Барбер работает">
+          </picture>
           <h3 lang="en">John Smith</h3>
           <p lang="en">Extreme Barber</p>
           <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg></a></li>
           </ul>
         </li>
         <li>
-          <picture></picture>
+          <picture>
+              <img width="418" src="./images/master2-mobile.jpg" alt="Барбер работает">
+          </picture>
           <h3 lang="en">Michele Doe</h3>
           <p lang="en">Extreme Barber</p>
           <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg></a></li>
           </ul>
         </li>
         <li>
-          <picture></picture>
+          <picture>
+              <img width="418" src="./images/master3-mobile.jpg" alt="Барбер работает">
+          </picture>
           <h3 lang="en">Alan Black</h3>
           <p lang="en">Extreme Barber</p>
           <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg></a></li>
+            <li><a href="#"> <svg>
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg></a></li>
           </ul>
         </li>
       </ul>
+      </div>
     </section>
     <!-- Work-process -->
     <section>
+        <div class="container">
       <p>На латинском языке “барба” означает “борода”</p>
       <ul>
         <li>
-          <picture></picture>
+          <picture><img src="./images/work-process1-mobile.jpg" alt="Барбер работает"></picture>
         </li>
         <li>
-          <picture></picture>
+          <picture><img src="./images/work-process2-mobile.jpg" alt="Барбер работает"></picture>
         </li>
         <li>
-          <picture></picture>
+          <picture><img src="./images/work-process3-mobile.jpg" alt="Барбер работает"></picture>
         </li>
         <li>
-          <picture></picture>
+          <picture><img src="./images/work-process4-mobile.jpg" alt="Барбер работает"></picture>
         </li>
       </ul>
     </section>
+    </main>
     <footer>
       <form>
         <h2>Онлайн-запись</h2>
@@ -191,6 +256,7 @@
         </label>
         <button type="submit">Отправить</button>
       </form>
+      <div class="footer-bckg">
       <h2>Контакты</h2>
       <address>
         <ul>
@@ -201,12 +267,14 @@
       </address>
       <p>время работы</p>
       <p>Ежедневно с 9:00 до 22:00</p>
+      </div>
       <div>
-        <p>Copyright 2020</p>
+        <p>&#169; Copyright 2022</p>
         <ul>
           <li><a href="#">Instagram</a></li>
           <li><a href="#">Facebook</a></li>
         </ul>
+      </div>
       </div>
     </footer>
   </body>
