@@ -1,14 +1,15 @@
-.mobile-header {
-  background-image: url('../images/header-img-mobile.jpg');
+.page-header {
+  background-image: url(../images/header-img-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 40px;
+  padding-bottom: 183px;
+  // margin-bottom: 120px;
 }
-
-.page-header__container {
+.page-header__menu {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 113px;
+  margin-bottom: 120px;
 }
 .mobile-header__button {
   display: flex;
@@ -26,4 +27,5 @@
 }
 .mobile-header__menu {
   position: absolute;
+  display: none;
 }

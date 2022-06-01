@@ -1,0 +1,24 @@
+.about {
+  padding: 84px 0;
+}
+.about__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  @include font(11px, null, 600, 15px, 0.1em, var(--main-text-color), uppercase);
+  &::before {
+    @include line;
+  }
+}
+.about__title {
+  margin-bottom: 20px;
+  @include font(28px, 'Raleway', 700, 33px, 0.05em, var(--main-text-color));
+}
+.about__reason {
+  margin-bottom: 20px;
+  @include font(16px, null, 400, 26px, 0.02em, var(--main-description-color));
+}
+.about__description {
+  margin-bottom: 40px;
+  @include font(14px, null, 400, 26px, 0.02em, var(--main-description-color));
+}

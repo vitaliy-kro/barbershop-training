@@ -1,5 +1,16 @@
 :root {
   --mobile-logo-color: #ffffff;
+  --main-background-color: #ffffff;
+  --hero-title-color: #ffffff;
+  --hero-text-color: rgba(157, 164, 189, 0.6);
+  --hero-decription-color: #9da4bd;
+  --main-text-color: #303030;
+  --main-description-color: #555555;
+  --button-border-color: #ff6c00;
+}
+body {
+  font-family: 'Open-Sans', sans-serif;
+  background-color: var(--main-background-color);
 }
 .container {
   width: 100%;
@@ -9,5 +20,19 @@
   padding-right: 30px;
   @include mobile {
     max-width: 480px;
+  }
+}
+.main-button {
+  display: block;
+  cursor: pointer;
+  @include font(12px, null, 600, 16px, 0.09em, var(--main-text-color), uppercase, center);
+  padding: 12px 20px;
+  border: 1px solid var(--button-border-color);
+  border-radius: 25px;
+  background-color: initial;
+
+  &--reversed {
+    color: var(--hero-title-color);
+    margin: 0 auto;
   }
 }

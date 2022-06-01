@@ -15,10 +15,10 @@
     <title>Barbershop</title>
   </head>
   <body>
-      <div class="mobile-header">
     <!-- Header -->
     <header class="page-header">
-        <div class="container page-header__container">
+        <div class="container">
+          <div class="page-header__menu">
       <a class="logo" href="#">
         <svg width="70" height="56" class="logo__icon">
           <use href="./images/sprite.svg#icon-Logo"></use>
@@ -29,6 +29,13 @@
           <use href="./images/sprite.svg#icon-menu"></use>
         </svg>
       </button>
+    </div>
+    <!-- Hero-mobile -->
+      <div class="hero">
+      <p class="hero__text" lang="en">A hair salon for men in Kyiv</p>
+      <h1 class="hero__title">BarberShop</h1>
+      <p class="hero__description">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+    </div>
       </div>
       <div class="mobile-header__menu">
       <nav>
@@ -50,99 +57,92 @@
       </div>
     </header>
     <main>
-    <!-- Hero -->
-    <section>
-        <div class="container">
-      <p lang="en">A hair salon for men in Kyiv</p>
-      <h1>BarberShop</h1>
-      <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
-      </div>
-    </section>
-    </div>
     <!-- About us -->
-    <section>
+    <section class="about">
         <div class="container">
-      <p>О НАС</p>
-      <h2>Лучший Барбершоп твоего города</h2>
-      <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-      Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты
+      <p class="about__text">О нас</p>
+      <h3 class="about__title">Лучший Барбершоп твоего города</h3>
+      <p class="about__reason">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+      <p class="about__description"> Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты
       попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая
       всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто
-      к нам приходит!
-      <button>онлайн-запись</button>
+      к нам приходит! </p>
+      <button class="main-button">онлайн-запись</button>
       </div>
     </section>
     <!-- Services and prices -->
     <section class="services">
         <div class="container">
-      <p>Проведи время в компании лучших мастеров</p>
-      <h2>Услуги и цены</h2>
-      <ul>
-        <li>
-          <p>Мужская стрижка</p>
-          <p>от 300 грн.</p>
+      <p class="services__text">Проведи время в компании лучших мастеров</p>
+      <h2 class="services__title">Услуги и цены</h2>
+      <ul class="services__list price-list">
+        <li class="price-list__item">
+          <p class="price-list__text price-list__text--left">Мужская стрижка</p>
+          <p class="price-list__text price-list__text--right">от 300 грн.</p>
         </li>
-        <li>
-          <p>Стрижка бороды</p>
-          <p>от 200 грн.</p>
+        <li class="price-list__item">
+          <p class="price-list__text price-list__text--left">Стрижка бороды</p>
+          <p class="price-list__text price-list__text--right">от 200 грн.</p>
         </li>
-        <li>
-          <p>Стрижка усов</p>
-          <p>от 200 грн.</p>
+        <li class="price-list__item">
+          <p class="price-list__text price-list__text--left">Стрижка усов</p>
+          <p class="price-list__text price-list__text--right">от 200 грн.</p>
         </li>
-        <li>
-          <p>Бритье опасной бритвой</p>
-          <p>от 200 грн.</p>
+        <li class="price-list__item">
+          <p class="price-list__text price-list__text--left">Бритье опасной бритвой</p>
+          <p class="price-list__text price-list__text--right">от 200 грн.</p>
         </li>
-        <li>
-          <p>Cтрижка у стажера</p>
-          <p>от 50 грн.</p>
+        <li class="price-list__item">
+          <p class="price-list__text price-list__text--left">Cтрижка у стажера</p>
+          <p class="price-list__text price-list__text--right">от 50 грн.</p>
         </li>
-        <li>
-          <p>Стрижка под насадку</p>
-          <p>от 200 грн.</p>
+        <li class="price-list__item">
+          <p class="price-list__text price-list__text--left">Стрижка под насадку</p>
+          <p class="price-list__text price-list__text--right">от 200 грн.</p>
         </li>
-        <li>
-          <p>Детская стрижка (до 12 лет)</p>
-          <p>от 300 грн.</p>
+        <li class="price-list__item">
+          <p class="price-list__text price-list__text--left">Детская стрижка (до 12 лет)</p>
+          <p class="price-list__text price-list__text--right">от 300 грн.</p>
         </li>
-        <li>
-          <p>Камуфлирование седины</p>
-          <p>от 200 грн.</p>
+        <li class="price-list__item price-list__item--last">
+          <p class="price-list__text price-list__text--left">Камуфлирование седины</p>
+          <p class="price-list__text price-list__text--right">от 200 грн.</p>
         </li>
       </ul>
-      <button>онлайн-запись</button>
+      <button class="main-button main-button--reversed">онлайн-запись</button>
+        </div>
     </section>
     <!-- Reasons -->
-    <section>
-      <p>старая традиционная школа</p>
-      <h2>Почему приходят именно к нам?</h2>
-      <p>
+    <section class="reasons">
+      <div class="container">
+      <p class="reasons__text"> старая традиционная школа</p>
+      <h2 class="reasons__title">Почему приходят именно к нам?</h2>
+      <p class="reasons__description">
         О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
       </p>
-      <ul>
-        <li>
+      <ul class="reasons__list">
+        <li class="reasons__item">
           <p>600 
-              <svg>
+              <svg width="13" height="22">
                   <use href="./images/sprite.svg#icon-plus"></use>
               </svg>
           </p>
           <p>Довольных клиентов в день</p>
         </li>
-        <li>
-          <p>50 <svg>
+        <li class="reasons__item reasons__item--even">
+          <p>50 <svg width="13" height="22">
                   <use href="./images/sprite.svg#icon-plus"></use>
               </svg></p>
           <p>Наград за отличный сервис</p>
         </li>
-        <li>
-          <p>20 <svg>
+        <li class="reasons__item">
+          <p>20 <svg width="13" height="22">
                   <use href="./images/sprite.svg#icon-plus"></use>
               </svg></p>
           <p>Лучших мастеров Киева</p>
         </li>
-        <li>
-          <p>100 <svg>
+        <li class="reasons__item reasons__item--even" >
+          <p>100 <svg width="13" height="22">
                   <use href="./images/sprite.svg#icon-plus"></use>
               </svg></p>
           <p>Подарков постоянным клиентам</p>
@@ -151,70 +151,70 @@
       </div>
     </section>
     <!-- Masters -->
-    <section>
+    <section class="workers">
         <div class="container">
-      <p>для настоящих ценителей атмосферы</p>
-      <h2>Наши мастера</h2>
-      <ul>
-        <li>
+      <p class="workers__text">для настоящих ценителей атмосферы</p>
+      <h2 class="workers__title">Наши мастера</h2>
+      <ul class="workers__list">
+        <li class="workers__item">
           <picture>
-              <img width="418" src="./images/master1-mobile.jpg" alt="Барбер работает">
+              <img class="workers__image" width="418" src="./images/master1-mobile.jpg" alt="Барбер работает">
           </picture>
-          <h3 lang="en">John Smith</h3>
-          <p lang="en">Extreme Barber</p>
-          <ul>
-            <li><a href="#"> <svg>
+          <h3 lang="en" class="workers__name">John Smith</h3>
+          <p lang="en" class="workers__position">Extreme Barber</p>
+          <ul class="social-list">
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-instagram"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-twitter"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-facebook"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-linkedin"></use>
             </svg></a></li>
           </ul>
         </li>
-        <li>
+        <li class="workers__item">
           <picture>
-              <img width="418" src="./images/master2-mobile.jpg" alt="Барбер работает">
+              <img class="workers__image" width="418" src="./images/master2-mobile.jpg" alt="Барбер работает">
           </picture>
-          <h3 lang="en">Michele Doe</h3>
-          <p lang="en">Extreme Barber</p>
-          <ul>
-            <li><a href="#"> <svg>
+          <h3 lang="en" class="workers__name">Michele Doe</h3>
+          <p lang="en" class="workers__position">Extreme Barber</p>
+          <ul class="social-list">
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-instagram"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-twitter"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-facebook"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-linkedin"></use>
             </svg></a></li>
           </ul>
         </li>
-        <li>
+        <li class="workers__item">
           <picture>
-              <img width="418" src="./images/master3-mobile.jpg" alt="Барбер работает">
+              <img class="workers__image" width="418" src="./images/master3-mobile.jpg" alt="Барбер работает">
           </picture>
-          <h3 lang="en">Alan Black</h3>
-          <p lang="en">Extreme Barber</p>
-          <ul>
-            <li><a href="#"> <svg>
+          <h3 lang="en" class="workers__name">Alan Black</h3>
+          <p lang="en" class="workers__position">Extreme Barber</p>
+          <ul class="social-list">
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-instagram"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-twitter"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-facebook"></use>
             </svg></a></li>
-            <li><a href="#"> <svg>
+            <li class="soc-list__item"><a class="soc-list__link" href="#"> <svg class="soc-list__icon" width="20" height="20">
                 <use href="./images/sprite.svg#icon-linkedin"></use>
             </svg></a></li>
           </ul>

@@ -1,0 +1,30 @@
+.workers {
+  padding: 84px 0;
+}
+.workers__text {
+  display: flex;
+  align-items: center;
+  @include font(); &: : before {
+    @include line;
+  }
+}
+.workers__title {
+}
+.workers__list {
+}
+.workers__item {
+}
+.workers__image {
+}
+.workers__name {
+}
+.workers__position {
+}
+.social-list {
+}
+.soc-list__item {
+}
+.soc-list__link {
+}
+.soc-list__icon {
+}

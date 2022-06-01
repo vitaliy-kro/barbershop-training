@@ -1,0 +1,18 @@
+.hero__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  @include font(11px, null, 600, 15px, 0.1em, var(--hero-text-color), uppercase);
+
+  &::before {
+    @include line(var(--hero-text-color));
+  }
+}
+.hero__title {
+  margin-bottom: 20px;
+  @include font(48px, 'Raleway', 700, 56px, 0.05em, var(--hero-title-color));
+}
+.hero__description {
+  width: 306px;
+  @include font(16px, null, 400, 26px, 0.02em, var(--hero-decription-color));
+}
