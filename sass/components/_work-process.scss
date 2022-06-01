@@ -1,0 +1,23 @@
+.work-process {
+  padding: 84px 0;
+}
+.work-process__text {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 44px;
+  @include font(11px, null, 600, 21px, 0.1em, var(--main-text-color), uppercase);
+  &::before {
+    @include line;
+  }
+}
+.work-process__list {
+}
+.work-process__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.work-process__img {
+  display: block;
+  width: 100%;
+}

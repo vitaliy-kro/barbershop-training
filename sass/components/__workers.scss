@@ -1,30 +1,70 @@
 .workers {
   padding: 84px 0;
+  background-color: var(--workers-background-color);
 }
 .workers__text {
   display: flex;
   align-items: center;
-  @include font(); &: : before {
+  margin-bottom: 20px;
+  @include font(11px, null, 600, 15px, 0.1em, var(--main-text-color), uppercase);
+  &::before {
     @include line;
   }
 }
 .workers__title {
+  @include font(42px, 'Raleway', 700, 49px, 0.05em, var(--main-text-color));
+  margin-bottom: 20px;
 }
 .workers__list {
 }
 .workers__item {
 }
+.workers__text-content {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  &--last {
+    padding-bottom: 0;
+  }
+}
 .workers__image {
+  display: block;
+  width: 100%;
 }
 .workers__name {
+  @include font(18px, null, 400, 25px, 0.02em, var(--main-text-color), capitalize, center);
+  margin-bottom: 8px;
 }
 .workers__position {
+  @include font(14px, null, 400, 19px, 0.02em, var(--accent-color), capitalize, center);
+  margin-bottom: 30px;
 }
 .social-list {
+  display: flex;
+  justify-content: center;
 }
 .soc-list__item {
+  background-color: var(--main-background-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 .soc-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--main-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  transition: color 250ms var(--main-animation);
 }
 .soc-list__icon {
+  fill: currentColor;
 }
