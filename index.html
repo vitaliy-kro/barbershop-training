@@ -122,30 +122,28 @@
       </p>
       <ul class="reasons__list">
         <li class="reasons__item">
-          <p>600 
-              <svg width="13" height="22">
-                  <use href="./images/sprite.svg#icon-plus"></use>
-              </svg>
+          <p class="reasons__number">600 
+              <span class="reasons__plus">+</span>
           </p>
-          <p>Довольных клиентов в день</p>
+          <p class="reasons__explanation">Довольных клиентов в день</p>
         </li>
         <li class="reasons__item reasons__item--even">
-          <p>50 <svg width="13" height="22">
-                  <use href="./images/sprite.svg#icon-plus"></use>
-              </svg></p>
-          <p>Наград за отличный сервис</p>
+          <p class="reasons__number">50
+            <span class="reasons__plus">+</span>
+          </p>
+          <p class="reasons__explanation">Наград за отличный сервис</p>
         </li>
         <li class="reasons__item">
-          <p>20 <svg width="13" height="22">
-                  <use href="./images/sprite.svg#icon-plus"></use>
-              </svg></p>
-          <p>Лучших мастеров Киева</p>
+          <p class="reasons__number">20
+            <span class="reasons__plus">+</span>
+          </p>
+          <p class="reasons__explanation">Лучших мастеров Киева</p>
         </li>
         <li class="reasons__item reasons__item--even" >
-          <p>100 <svg width="13" height="22">
-                  <use href="./images/sprite.svg#icon-plus"></use>
-              </svg></p>
-          <p>Подарков постоянным клиентам</p>
+          <p class="reasons__number">100
+            <span class="reasons__plus">+</span>
+          </p>
+          <p class="reasons__explanation">Подарков постоянным клиентам</p>
         </li>
       </ul>
       </div>
@@ -248,20 +246,26 @@
       </ul>
     </section>
     </main>
-    <footer class="page-footer">
-      <form class="record-form">
+    <section class="online-form">
+      <div class="container">
+      <form class="record-form" name="online-recording">
         <h2 class="record-form__title">Онлайн-запись</h2>
-        <label>
-          <input type="text" placeholder="Имя*" name="user-name" />
-        </label>
-        <label>
-          <input type="tel" placeholder="Телефон*" name="user-tel" />
-        </label>
-        <label>
-          <input type="text" placeholder="сообщение" name="user-comment" />
-        </label>
-        <button type="submit">Отправить</button>
+        <div class="record-form__content">
+        <input id="user-name" class="record-form__input" type="text" name="user-name" placeholder=" " required/>
+          <label for="user-name" class="record-form__label">Имя*</label>
+      </div>
+        <div class="record-form__content">
+          <input id="user-tel" class="record-form__input" type="tel" name="user-tel" placeholder=" " required/>
+          <label for="user-tel" class="record-form__label">Телефон*</label>
+      </div>
+        <div class="record-form__content">
+          <textarea id="comment" class="record-form__comment-area" type="text" name="user-comment" placeholder=" "></textarea>
+          <label for="user-comment" class="record-form__label">Сообщение</label>
+      </div>
+        <button type="submit" class="main-button main-button--reversed record-form__button">Отправить</button>
       </form>
+      </div>
+      </section>
       <div class="footer-bckg">
       <h2>Контакты</h2>
       <address>
@@ -274,6 +278,7 @@
       <p>время работы</p>
       <p>Ежедневно с 9:00 до 22:00</p>
       </div>
+      <footer class="page-footer"></footer>
       <div>
         <p>&#169; Copyright 2022</p>
         <ul>

@@ -22,19 +22,35 @@
 .reasons__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -35px;
-  margin-left: -30px;
 }
 .reasons__item {
-  background-color: tomato;
-  padding: 20px 35px;
-  @include item(null, null, 30px, 30px, null, 2, 30px);
-  width: 193px;
+  background-color: var(--workers-background-color);
+  padding: 20px 15px;
+  width: calc((100% - 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
   height: 133px;
   align-items: center;
   text-align: center;
-  &--even {
-    margin-top: 79px;
-    margin-left: 30px;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
+  &--even {
+    margin-right: 0px;
+    transform: translateY(35px);
+  }
+}
+.reasons__number {
+  @include font(42px, null, 700, 57px, 0.05em, var(--main-text-color));
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.reasons__plus {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--accent-color);
+}
+.reasons__explanation {
+  @include font(11px, null, 600, 15px, null, var(--main-text-color), $ti: center);
 }
