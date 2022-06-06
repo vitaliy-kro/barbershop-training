@@ -11,6 +11,7 @@
   --accent-color: #ff6c00;
   --online-form-background: #191c26;
   --prices-line-color: rgba(157, 164, 189, 0.12);
+  --contacts-line-color: rgba(157, 164, 189, 0.4);
   --main-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
@@ -34,7 +35,7 @@ body {
   padding: 12px 20px;
   border: 1px solid var(--button-border-color);
   border-radius: 25px;
-  background-color: initial;
+  background-color: transparent;
 
   &--reversed {
     color: var(--hero-title-color);

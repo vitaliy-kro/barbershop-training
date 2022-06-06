@@ -1,6 +1,35 @@
-.footer-bckg {
-  background-color: #191c26;
-  background-image: url('../images/footer-bckg-mobile.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+.page-footer {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  background-color: var(--workers-background-color);
+}
+
+.page-footer__soc-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  &::before {
+    @include line($mr: 40px);
+  }
+}
+.page-footer__soc-item {
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+.page-footer__soc-link {
+  @include font(11px, null, 600, 15px, 0.2em, var(--main-text-color));
+  text-decoration: none;
+}
+.page-footer__copyright {
+  @include font(11px, null, 600, 15px, 0.2em, var(--hero-description-color));
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.2em;
+
+  color: #9da4bd;
 }

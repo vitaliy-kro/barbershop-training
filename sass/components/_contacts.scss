@@ -1,0 +1,53 @@
+.contacts {
+  background-color: #191c26;
+  background-image: url('../images/footer-bckg-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 84px 0;
+}
+.contacts__title {
+  @include font(42px, 'Raleway', 700, 49px, 0.05em, var(--hero-title-color), $ti: center);
+  margin-bottom: 40px;
+}
+.adress {
+  margin-bottom: 44px;
+  font-style: normal;
+}
+.adress__list {
+}
+.adress__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.adress__icon {
+  display: inline-block;
+  margin-right: 16px;
+}
+.adress__link {
+  @include font(18px, null, 400, 30px, 0.02em, var(--hero-description-color));
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+.contacts__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  @include font(11px, null, 600, 15px, 0.1em, var(--hero-title-color), uppercase);
+  &::before {
+    @include line($bck: var(--contacts-line-color));
+  }
+}
+.contacts__work-time {
+  @include font(18px, null, 400, 30px, 0.02em, var(--hero-decription-color));
+}

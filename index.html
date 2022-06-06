@@ -24,8 +24,8 @@
           <use href="./images/sprite.svg#icon-Logo"></use>
         </svg>
       </a>
-      <button class="mobile-header__button">
-        <svg width="40" height="40" class="mobile-header__icon">
+      <button class="page-header__button-menu" data-menu-open>
+        <svg width="40" height="40" class="page-header__menu-icon">
           <use href="./images/sprite.svg#icon-menu"></use>
         </svg>
       </button>
@@ -37,23 +37,30 @@
       <p class="hero__description">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
     </div>
       </div>
-      <div class="mobile-header__menu">
-      <nav>
-        <ul >
-          <li><a href="#">О нас</a></li>
-          <li><a href="#"></a>Услуги и цены</li>
-          <li><a href="#"></a>Мастера</li>
-          <li><a href="#"></a>Контакты</li>
+      <div class="mobile-menu" data-menu>
+        <button class="mobile-menu__close-button" data-menu-close >
+        <svg class="mobile-menu__close-icon" width="40" height="40">
+          <use href="./images/sprite.svg#close_icon"></use>
+        </svg>
+        </button>
+        <div class="container mobile-menu__container">
+      <nav class="navigation">
+        <ul class="navigation__list" >
+          <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Услуги и цены</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Мастера</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="tel:+380441111111">+38 044 111 1 1 11</a></li>
-        <li><button>Онлайн-запись</button></li>
+      <ul class="mobile-header__contacts mobile-contacts">
+        <li class="mobile-contacts__item"><a class="mobile-contacts__number" href="tel:+380441111111">+38 044 111 1 1 11</a></li>
+        <li class="mobile-contacts__item"><button class="main-button mobile-contacts__button">Онлайн-запись</button></li>
       </ul>
-      <ul>
-        <li>Instagram</li>
-        <li>Youtube</li>
+      <ul class="mobile-soc-media">
+        <li class="mobile-soc-media__item"><a class="mobile-soc-media__link">Instagram</a></li>
+        <li class="mobile-soc-media__item"><a class="mobile-soc-media__link">Youtube</a></li>
       </ul>
+      </div>
       </div>
     </header>
     <main>
@@ -266,27 +273,35 @@
       </form>
       </div>
       </section>
-      <div class="footer-bckg">
-      <h2>Контакты</h2>
-      <address>
-        <ul>
-          <li><a href="#">ул. Васильковая, 7А, Киев, 08132</a></li>
-          <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-          <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+      <section class="contacts">
+      <div class="container">
+      <h2 class="contacts__title">Контакты</h2>
+      <address class="adress">
+        <ul class="adress__list">
+          <li class="adress__item"><svg class="adress__icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-map"></use>
+          </svg><a class="adress__link" href="#">ул. Васильковая, 7А, Киев, 08132</a></li>
+          <li class="adress__item"><svg class="adress__icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg><a class="adress__link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+          <li class="adress__item"><svg class="adress__icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-mail"></use>
+          </svg><a class="adress__link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
         </ul>
       </address>
-      <p>время работы</p>
-      <p>Ежедневно с 9:00 до 22:00</p>
+      <p class="contacts__text">время работы</p>
+      <p class="contacts__work-time">Ежедневно с 9:00 до 22:00</p>
       </div>
-      <footer class="page-footer"></footer>
-      <div>
-        <p>&#169; Copyright 2022</p>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
+      </section>
+      <footer class="page-footer">
+      <div class="container">
+        <ul class="page-footer__soc-media">
+          <li class="page-footer__soc-item"><a class="page-footer__soc-link" href="#">Instagram</a></li>
+          <li class="page-footer__soc-item"><a class="page-footer__soc-link" href="#">Facebook</a></li>
         </ul>
-      </div>
+         <p class="page-footer__copyright">&#169; Copyright 2022</p>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
