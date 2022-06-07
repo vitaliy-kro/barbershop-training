@@ -74,6 +74,11 @@ body {
   border: 1px solid var(--button-border-color);
   border-radius: 25px;
   background-color: transparent;
+  transition: color 250ms var(--main-animation), background-color 250ms var(--main-animation);
+}
+.main-button:hover, .main-button:focus {
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
 }
 .main-button--reversed {
   color: var(--hero-title-color);
